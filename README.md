@@ -28,12 +28,15 @@ If we replace line 7 with `$floor = max(array_keys($map)) + 2;` then we go back 
 
 Run `run.sh`:
 
-This will do a one-time build of a docker image based on `php:8.2-cli` with the `opcache` extension enabled, and then print:
+This will do a one-time build of a docker image based on `php:8.3-cli` with the `opcache` extension enabled, and then print:
 ```
 run.php No Jit: Part 1: 284
 run.php Jit: JIT setting failure.
-run.php Jit file-cache: Part 1: 284
 run2.php No Jit: Part 1: 284
 run2.php Jit: JIT comparison failure.
-run2.php Jit file-cache: Part 1: 284
+
+php version: PHP 8.3.0 (cli) (built: Nov 27 2023 21:24:30) (NTS)
+Copyright (c) The PHP Group
+Zend Engine v4.3.0, Copyright (c) Zend Technologies
+    with Zend OPcache v8.3.0, Copyright (c), by Zend Technologies
 ```
