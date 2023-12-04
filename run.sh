@@ -1,6 +1,6 @@
 #!/bin/sh
 
-IMAGE="shanemcc:php-8.2-cli-opcache-bug-01"
+IMAGE="shanemcc:php-8.3-cli-opcache-bug-01"
 
 docker image inspect $IMAGE >/dev/null 2>&1
 if [ $? -ne 0 ]; then

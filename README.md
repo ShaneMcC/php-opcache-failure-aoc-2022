@@ -1,6 +1,6 @@
 # PHP Opcache Failure
 
-The included `run.php` is based on an implementation of [Advent of Code 2022 day 14](https://adventofcode.com/2022/day/14) from [shanemcc/aoc-2022](https://github.com/shanemcc/aoc-2022) that appears to trigger opcache bugs in php 8.0, 8.1 and 8.2 when using in-memory opcache.
+The included `run.php` is based on an implementation of [Advent of Code 2022 day 14](https://adventofcode.com/2022/day/14) from [shanemcc/aoc-2022](https://github.com/shanemcc/aoc-2022) that appears to trigger opcache bugs in php 8.0, 8.1, 8.2 and 8.3 when using in-memory opcache.
 
 To try and reduce the scope of the problem, the input parsing has been removed, and replaced with a static 2D `$map[$y][$x]` (in `input.php`).
 Spaces that are occupied by rock are set as '#', spaces that are air are not set.
