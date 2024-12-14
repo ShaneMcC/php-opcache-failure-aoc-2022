@@ -1,3 +1,4 @@
-FROM php:8.3-cli
+ARG VERSION=8.3
+FROM php:${VERSION}-cli
 
 RUN docker-php-ext-configure opcache --enable-opcache && docker-php-ext-install opcache
